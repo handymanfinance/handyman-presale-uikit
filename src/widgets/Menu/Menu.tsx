@@ -26,6 +26,21 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   background-color: transparent;
   z-index: 20;
   transform: translate3d(0, 0, 0);
+
+  & div:nth-child(2) {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+  }
+
+  ${({ theme }) => theme.mediaQueries.xs} {
+    justify-content: space-between;
+    padding-left: 20px;
+    
+    & div:nth-child(2) {
+      position: relative;
+    }
+  }
 `;
 
 const BodyWrapper = styled.div`
@@ -117,7 +132,7 @@ const Menu: React.FC<NavProps> = ({
             isDark={isDark}
             href={homeLink?.href ?? "/"}
           />
-          <Flex style={{ position: "fixed", right: "15px", top: "15px" }}>
+          <Flex style={{  }}>
             <UserBlock account={account} login={login} logout={logout} />
           </Flex>
         </StyledNav>
