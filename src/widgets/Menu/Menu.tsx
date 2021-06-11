@@ -20,7 +20,8 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   transition: top 0.2s;
   display: flex;
   position: relative;
-  justify-content: center;
+  justify-content: space-between;
+  padding-left: 20px;
   padding-top: 15px;
   width: 100%;
   background-color: transparent;
@@ -28,18 +29,19 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   transform: translate3d(0, 0, 0);
 
   & div:nth-child(2) {
-    position: fixed;
-    right: 15px;
-    top: 15px;
+    position: relative;
   }
 
-  ${({ theme }) => theme.mediaQueries.xs} {
-    justify-content: space-between;
-    padding-left: 20px;
+  ${({ theme }) => theme.mediaQueries.sm} {
+    justify-content: center;
+    padding-left: 0;
     
     & div:nth-child(2) {
-      position: relative;
+      position: fixed;
+      right: 15px;
+      top: 15px;
     }
+
   }
 `;
 
