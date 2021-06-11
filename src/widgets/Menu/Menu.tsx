@@ -117,9 +117,8 @@ const Menu: React.FC<NavProps> = ({
             isDark={isDark}
             href={homeLink?.href ?? "/"}
           />
-          <Flex>
+          <Flex style={{ position: "fixed", right: "15px", top: "15px" }}>
             <UserBlock account={account} login={login} logout={logout} />
-            {profile && <Avatar profile={profile} />}
           </Flex>
         </StyledNav>
         <Inner isPushed={isPushed} showMenu={showMenu} hideSidebar={hideSidebar || false}>
