@@ -2776,9 +2776,9 @@ var useKonamiCheatCode = function (matchedCodeHandler) {
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#1FC7D4",
-    primaryBright: "#53DEE9",
-    primaryDark: "#0098A1",
+    primary: "#0d6327",
+    primaryBright: "#109236",
+    primaryDark: "#093c18",
     secondary: "#7645D9",
     success: "#31D0AA",
     warning: "#FFB237",
@@ -2797,7 +2797,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors),
     } });
 var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#ECD76E", background: "#10242B", backgroundDisabled: "#333A3E", 
     // backgroundAlt: "#27262c",
-    backgroundAlt: "#203b9ab3", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#122371", input: "#122371", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#0F2121", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#ddd1c1", borderColor: "#847a35", gradients: {
+    backgroundAlt: "#012e3ca6", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#021015", input: "#021015", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#0F2121", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#ddd1c1", borderColor: "#847a35", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
         inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
@@ -3215,7 +3215,7 @@ MenuButton.defaultProps = {
 var templateObject_1$8;
 
 var blink = styled.keyframes(templateObject_1$7 || (templateObject_1$7 = __makeTemplateObject(["\n  0%,  100% { transform: scaleY(1); } \n  50% { transform:  scaleY(0.1); } \n"], ["\n  0%,  100% { transform: scaleY(1); } \n  50% { transform:  scaleY(0.1); } \n"])));
-var StyledLink = styled__default['default'](reactRouterDom.Link)(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 50px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 50px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .right-eye {\n    animation-delay: 20ms;\n  }\n  &:hover {\n    .left-eye,\n    .right-eye {\n      transform-origin: center 60%;\n      animation-name: ", ";\n      animation-duration: 350ms;\n      animation-iteration-count: 1;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 50px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 50px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .right-eye {\n    animation-delay: 20ms;\n  }\n  &:hover {\n    .left-eye,\n    .right-eye {\n      transform-origin: center 60%;\n      animation-name: ", ";\n      animation-duration: 350ms;\n      animation-iteration-count: 1;\n    }\n  }\n"])), function (_a) {
+var StyledLink = styled__default['default'](reactRouterDom.Link)(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 120px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 120px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .right-eye {\n    animation-delay: 20ms;\n  }\n  &:hover {\n    .left-eye,\n    .right-eye {\n      transform-origin: center 60%;\n      animation-name: ", ";\n      animation-duration: 350ms;\n      animation-iteration-count: 1;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 120px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 120px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .right-eye {\n    animation-delay: 20ms;\n  }\n  &:hover {\n    .left-eye,\n    .right-eye {\n      transform-origin: center 60%;\n      animation-name: ", ";\n      animation-duration: 350ms;\n      animation-iteration-count: 1;\n    }\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 }, function (_a) {
@@ -3488,8 +3488,8 @@ var Avatar = function (_a) {
 var templateObject_1$4, templateObject_2$1;
 
 var Wrapper = styled__default['default'].div(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
-var StyledNav = styled__default['default'].nav(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  background-color: transparent;\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  background-color: transparent;\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])));
-var BodyWrapper = styled__default['default'].div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  background-image: url(/images/main-bg.jpg);\n  background-repeat: no-repeat;\n  background-size: cover;\n"], ["\n  position: relative;\n  display: flex;\n  background-image: url(/images/main-bg.jpg);\n  background-repeat: no-repeat;\n  background-size: cover;\n"])));
+var StyledNav = styled__default['default'].nav(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  transition: top 0.2s;\n  display: flex;\n  position: relative;\n  justify-content: center;\n  padding-top: 15px;\n  width: 100%;\n  background-color: transparent;\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  transition: top 0.2s;\n  display: flex;\n  position: relative;\n  justify-content: center;\n  padding-top: 15px;\n  width: 100%;\n  background-color: transparent;\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])));
+var BodyWrapper = styled__default['default'].div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  background-image: url(/images/main-bg.jpg);\n  background-repeat: no-repeat;\n  background-size: cover;\n"], ["\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  background-image: url(/images/main-bg.jpg);\n  background-repeat: no-repeat;\n  background-size: cover;\n"])));
 var Inner = styled__default['default'].div(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  flex-grow: 1;\n  transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n"], ["\n  flex-grow: 1;\n  transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n"])));
 var MobileOnlyOverlay = styled__default['default'](Overlay)(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
     var theme = _a.theme;
